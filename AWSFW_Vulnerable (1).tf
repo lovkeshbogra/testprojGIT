@@ -2,9 +2,7 @@ provider "aws" {
  region = "us-east-1"
 }
 
-data "aws_vpc" "GTM-AWS-EUS-INT-DFS-CS-VPC" {
- default = true
-}
+
 
 resource "aws_security_group" "allow_HTTP_HTTPS_RDP" {
   name        = "allow_HTTP_HTTPS_RDP"
