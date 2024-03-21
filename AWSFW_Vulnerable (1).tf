@@ -2,7 +2,7 @@ provider "aws" {
  region = "us-east-1"
 }
 
-data "aws_vpc" "default" {
+data "aws_vpc" "GTM-AWS-EUS-INT-DFS-CS-VPC" {
  default = true
 }
 
