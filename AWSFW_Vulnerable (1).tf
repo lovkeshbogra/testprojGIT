@@ -2,10 +2,6 @@ provider "aws" {
  region = "us-east-1"
 }
 
-data "aws_vpc" "vpc-074d730d51d632404" {
- default = false
-}
-
 resource "aws_security_group" "allow_HTTP_HTTPS_RDP" {
   name        = "allow_HTTP_HTTPS_RDP"
   description = "Allow HTTP,HTTPS,RDP inbound traffic"
